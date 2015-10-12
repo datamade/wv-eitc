@@ -1,4 +1,4 @@
-# Invest in WV Families
+# Invest in West Virginia Families
 
 http://investinwvfamilies.org
 
