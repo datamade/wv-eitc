@@ -1,0 +1,9 @@
+port:  5000
+markdown: kramdown
+name: "Invest in West Virginia Families"
+url: http://investinwvfamilies.org
+encoding: utf-8
+timezone: America/Chicago
+description: ""
+gems:
+  - jekyll-redirect-from
