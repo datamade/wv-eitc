@@ -1,11 +1,13 @@
+var map;
+
 (function(){
     var lastClicked;
     var house_boundaries;
     var senate_boundaries;
     var view_mode = 'house'
     var marker;
-    var map = L.map('map', {minZoom: 6})
-        .fitBounds([[36.970298, -87.495199],[42.5083380000001,-91.5130789999999]]);
+    map = L.map('map', {minZoom: 6})
+        .fitBounds([[35.2905, -77.3108],[41.0710,-83.2434]]);
     var googleLayer = new L.Google('ROADMAP', {animate: false});
     map.addLayer(googleLayer);
     map.on('zoomstart', function(e){
