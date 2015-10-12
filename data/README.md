@@ -1,9 +1,9 @@
-# EITC Works data
+# WV EITC data
 
 
 Install stuff using pip & [homebrew](http://brew.sh/)
 ```bash
-> mkvirtualenv eitcworks
+> mkvirtualenv wveitc
 > pip install -r requirements.txt
 > brew install gdal --with-postgresql
 ```
