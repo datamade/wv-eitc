@@ -16,29 +16,24 @@ senate: merged_eitc_senate.geojson
 
 .PHONEY : cleanup_shapefiles
 cleanup_shapefiles :		
-	rm *.dbf *.prj *.sbn *.shx *.xml *.sbx
+	rm *.dbf *.prj *.shx *.xml *.cpg
 
-.INTERMEDIATE : senate_boundaries.shp house_boundaries.shp
-house_boundaries.shp senate_boundaries.shp : House\ and\ Senate\ shape\ files.zip
+.INTERMEDIATE : house_boundaries.shp
+house_boundaries.shp : src/$(HOUSE_SHAPE).zip
 	unzip -j "$<"
-	rename -v 's/PA 97-6 Senate Districts(.*)/senate_boundaries$$1/' *.*
-	rename -v 's/PA 97-6 House Districts(.*)/house_boundaries$$1/' *.*
+	rename -v 's/$(HOUSE_SHAPE)(.*)/house_boundaries$$1/' *.*
 	touch house_boundaries.shp
+
+.INTERMEDIATE : senate_boundaries.shp
+senate_boundaries.shp : src/$(SENATE_SHAPE).zip
+	unzip -j "$<"
+	rename -v 's/$(SENATE_SHAPE)(.*)/senate_boundaries$$1/' *.*
 	touch senate_boundaries.shp
 
 %.table: %.shp
 	shp2pgsql -I -s 4326 -d $< $* | \
 		psql -d $(PG_DB) -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT)
 	touch $@
-
-.INTERMEDIATE : eitc_senate.csv
-eitc_senate.csv: IL\ EITC\ Data\ by\ State\ Senate\ Legislative\ District.csv
-	cp "$<" $@
-
-.INTERMEDIATE : eitc_house.csv
-eitc_house.csv: IL\ EITC\ Data\ by\ State\ House\ Legislative\ District\ v5.csv
-	cp "$<" $@
-
 
 eitc_%.table: eitc_%.csv
 	psql -d $(PG_DB) -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT) -c "DROP TABLE IF EXISTS info_by_$*"
@@ -50,7 +45,7 @@ eitc_%.table: eitc_%.csv
 merged_eitc_%.shp: %_boundaries.table eitc_%.table
 	pgsql2shp -f $@ -h $(PG_HOST) -u $(PG_USER) -p $(PG_PORT) $(PG_DB) \
 		"SELECT $*_boundaries.geom, info_by_$*.* FROM $*_boundaries \
-		JOIN info_by_$* ON $*_boundaries.district_1 = cast(info_by_$*.il$*dist as smallint)"
+		JOIN info_by_$* ON cast($*_boundaries.NAME as smallint) = cast(info_by_$*.district_number as smallint)"
 
 merged_eitc_%.geojson: merged_eitc_%.shp
 	ogr2ogr -simplify 0.0001 -f GeoJSON $@ $<
@@ -62,5 +57,5 @@ merged_eitc_%.geojson: merged_eitc_%.shp
 
 .PHONY : create_db
 create_db :
-	createdb eitc
-	psql -d eitc -c "CREATE EXTENSION postgis"
+	createdb wv_eitc
+	psql -d wv_eitc -c "CREATE EXTENSION postgis"
