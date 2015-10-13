@@ -216,12 +216,12 @@ var map;
         district = parseInt(properties['DISTRICT_N']);
 
         if (view_mode == 'senate') {
-          doc_link = "docs/EITC Legislative Fact Sheets FINAL " + district + ".pdf";
+          doc_link = "#";
           name = properties['SENATOR'];
           mode_name = "Senate"
         }
         else {
-          doc_link = "docs/EITC Legislative Fact Sheets FINAL " + district + ".pdf";
+          doc_link = "#";
           name = properties['HOUSEREP'];
         }
 
