@@ -11,20 +11,29 @@ title: EITC Fact Sheets
     <p>See how the West Virginia Earned Income Tax Credit (EITC) will affect each House and Senate district.</p>
 
     <div class='row'>
-      <div class='col-md-6'>
-        <h3>West Virginia Senate Districts (1-17)</h3>
+      <div class='col-md-4'>
+        <h3>Senate Districts (1-17)</h3>
         <ul>
         {% for i in (1..17) %}
+          <li><a href='#'>Senate District {{i}}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div class='col-md-4'>
+        <h3>House Districts (1-34)</h3>
+        <ul>
+        {% for i in (1..34) %}
           <li><a href='#'>House District {{i}}</a></li>
         {% endfor %}
         </ul>
       </div>
 
-      <div class='col-md-6'>
-        <h3>West Virginia House Districts (1-67)</h3>
+      <div class='col-md-4'>
+        <h3>House Districts (35-67)</h3>
         <ul>
-        {% for i in (1..67) %}
-          <li><a href='#'>Senate District {{i}}</a></li>
+        {% for i in (35..67) %}
+          <li><a href='#'>House District {{i}}</a></li>
         {% endfor %}
         </ul>
       </div>
