@@ -2,8 +2,9 @@ port:  5000
 markdown: kramdown
 name: "Invest in West Virginia Families"
 url: http://investinwvfamilies.org
+title: "Invest in West Virginia Families"
 encoding: utf-8
 timezone: America/Chicago
-description: ""
+description: "The Earned Income Tax Credit (EITC) helps people who work but struggle to get by on low wages, while also reducing poverty, increasing tax fairness, and boosting local economies across the state."
 gems:
   - jekyll-redirect-from
