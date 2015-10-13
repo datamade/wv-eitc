@@ -133,8 +133,8 @@ var map;
 
     function house_style(feature){
         var style = {
-            "color": "white",
-            "fillColor": "#0570b0",
+            "color": "#333",
+            "fillColor": "#fdb104",
             "opacity": 1,
             "weight": 1,
             "fillOpacity": 0.5,
@@ -144,8 +144,8 @@ var map;
 
     function senate_style(feature){
         var style = {
-            "color": "white",
-            "fillColor": "#713589",
+            "color": "#333",
+            "fillColor": "#bdce39",
             "opacity": 1,
             "weight": 1,
             "fillOpacity": 0.5,
@@ -158,13 +158,13 @@ var map;
             if(typeof lastClicked !== 'undefined'){
                 house_boundaries.resetStyle(lastClicked);
             }
-            e.target.setStyle({'fillColor':"#90BE44"});
+            e.target.setStyle({'fillColor':"#00529B"});
             $('#district-info').html(featureInfo(feature.properties));
             map.fitBounds(e.target.getBounds(), {padding: [50,50]});
             lastClicked = e.target;
 
             $.address.parameter('senate_district', '');
-            $.address.parameter('house_district', feature.properties['ILHOUSEDIS']);
+            $.address.parameter('house_district', feature.properties['DISTRICT_N']);
         });
 
         layer.on('mouseover', function(e){
@@ -174,7 +174,7 @@ var map;
           layer.setStyle({weight: 1})
         })
 
-        var labelText = feature.properties['HOUSEREP'] + " (" + feature.properties['PARTY'] + ")<br />Illinois House District " + parseInt(feature.properties['ILHOUSEDIS']);
+        var labelText = "West Virginia House District " + parseInt(feature.properties['DISTRICT_N']);
         layer.bindLabel(labelText);
     }
 
@@ -189,7 +189,7 @@ var map;
             lastClicked = e.target;
 
             $.address.parameter('house_district', '');
-            $.address.parameter('senate_district', feature.properties['ILSENATEDI'])
+            $.address.parameter('senate_district', feature.properties['DISTRICT_N'])
         });
 
         layer.on('mouseover', function(e){
@@ -202,7 +202,7 @@ var map;
           layer.setStyle({weight: 1})
         })
 
-        var labelText = feature.properties['SENATOR'] + " (" + feature.properties['PARTY'] + ")<br />Illinois Senate District " + parseInt(feature.properties['ILSENATEDI']);
+        var labelText = "West Virginia Senate District " + parseInt(feature.properties['ILSENATEDI']);
         layer.bindLabel(labelText);
     }
 
