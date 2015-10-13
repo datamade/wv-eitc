@@ -33,7 +33,7 @@ var map;
         var senate_district = $.address.parameter('senate_district');
         if (house_district && !address){
             house_boundaries.eachLayer(function(layer){
-                if(layer.feature.properties['ILHOUSEDIS'] == house_district){
+                if(layer.feature.properties['DISTRICT_N'] == house_district){
                     layer.fire('click');
                 }
             })
@@ -41,7 +41,7 @@ var map;
         if (senate_district && !address){
             $("#view_mode_senate").click();
             senate_boundaries.eachLayer(function(layer){
-                if(layer.feature.properties['ILSENATEDI'] == senate_district){
+                if(layer.feature.properties['DISTRICT_N'] == senate_district){
                     layer.fire('click');
                 }
             })
@@ -175,6 +175,7 @@ var map;
         })
 
         var labelText = "West Virginia House District " + parseInt(feature.properties['DISTRICT_N']);
+        labelText += renderReps(feature.properties, false);
         layer.bindLabel(labelText);
     }
 
@@ -183,7 +184,7 @@ var map;
             if(typeof lastClicked !== 'undefined'){
                 senate_boundaries.resetStyle(lastClicked);
             }
-            e.target.setStyle({'fillColor':"#90BE44"});
+            e.target.setStyle({'fillColor':"#00529B"});
             $('#district-info').html(featureInfo(feature.properties));
             map.fitBounds(e.target.getBounds(), {padding: [50,50]});
             lastClicked = e.target;
@@ -202,7 +203,8 @@ var map;
           layer.setStyle({weight: 1})
         })
 
-        var labelText = "West Virginia Senate District " + parseInt(feature.properties['ILSENATEDI']);
+        var labelText = "West Virginia Senate District " + parseInt(feature.properties['DISTRICT_N']);
+        labelText += renderReps(feature.properties);
         layer.bindLabel(labelText);
     }
 
@@ -211,53 +213,34 @@ var map;
         var doc_link = '';
         var name = '';
         var mode_name = "House"
+        district = parseInt(properties['DISTRICT_N']);
 
         if (view_mode == 'senate') {
-          district = parseInt(properties['ILSENATEDI']);
-          doc_link = "docs/Senate District Fact Sheets v1 " + district + ".pdf";
+          doc_link = "docs/EITC Legislative Fact Sheets FINAL " + district + ".pdf";
           name = properties['SENATOR'];
           mode_name = "Senate"
         }
         else {
-          district = parseInt(properties['ILHOUSEDIS']);
           doc_link = "docs/EITC Legislative Fact Sheets FINAL " + district + ".pdf";
           name = properties['HOUSEREP'];
         }
 
         var blob = "<div>\
             <p><a href='index.html'>&laquo; back to State view</a></p>\
-            <h3>" + name + " (" + properties['PARTY'] + "), Illinois " + mode_name + " District " + district + "</h3>\
+            <h3>West Virginia " + mode_name + " District " + district + "</h3>\
             <table class='table'>\
-              <tbody>\
-                  <tr>\
-                      <td>Households receiving EITC</td>\
-                      <td>" + addCommas(properties['EITC']) + "</td>\
-                  </tr>\
-                  <tr>\
-                      <td>Children in EITC households</td>\
-                      <td>" + addCommas(properties['KIDEITC']) + "</td>\
-                  </tr>\
-              </tbody>\
+              <tbody>" + renderReps(properties, true) + "</tbody>\
             </table>\
-            <h3>Local Impact</h3>\
+            <h3>Local impact</h3>\
             <table class='table'>\
-              <thead>\
-                  <tr>\
-                      <th></th>\
-                      <th>Now (10%)</th>\
-                      <th>With expansion (20%)</th>\
-                  </tr>\
-              </thead>\
               <tbody>\
                   <tr>\
-                      <td>Average boost to working families' income</td>\
-                      <td>" + accounting.formatMoney(properties['KIDAVGEITC'], {precision: 0}) + "</td>\
-                      <td>" + accounting.formatMoney(properties['KIDAVGE_01'], {precision: 0}) + "</td>\
+                      <td>Households that will receive EITC</td>\
+                      <td>" + addCommas(properties['HOUSEHOLD_']) + "</td>\
                   </tr>\
                   <tr>\
                       <td>Annual boost to local economy</td>\
-                      <td>" + accounting.formatMoney(properties['MULTEFFECT'], {precision: 2}) + "M</td>\
-                      <td>" + accounting.formatMoney(properties['MULTEFF_01'], {precision: 2}) + "M</td>\
+                      <td>" + accounting.formatMoney(properties['ECONOMIC_I'], {precision: 0}) + "</td>\
                   </tr>\
               </tbody>\
             </table>\
@@ -267,12 +250,29 @@ var map;
             </div>\
             <div class='col-lg-6 text-center'>\
               <h3>Tell your lawmaker!</h3>\
-              <p>Help us spread the word about doubling the Illinois Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='http://salsa4.salsalabs.com/o/50920/p/dia/action3/common/public/?action_KEY=10927'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
+              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='http://salsa4.salsalabs.com/o/50920/p/dia/action3/common/public/?action_KEY=10927'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
             </div>\
             <div class='clearfix'></div>\
             </div>";
         return blob
     }
+
+    function renderReps(properties, as_table){
+      var repsTxt = ""
+      for (i = 1; i < 6; i++) { 
+        if (properties['REP_NAME_' + i] != undefined && properties['REP_NAME_' + i] != "") {
+          var rowTxt = properties['REP_NAME_' + i] + " (" + properties['PARTY_' + i] + " - " + properties['COUNTY_' + i] + ")";
+          if (as_table)
+            rowTxt = "<tr><td>" + rowTxt + "</td></tr>";
+          else
+            rowTxt = "<br />" + rowTxt;
+          repsTxt += rowTxt;
+        }
+      }
+
+      return repsTxt;
+    }
+
     function convertToPlainString(text) {
       if (text == undefined) return '';
       return decodeURIComponent(text);

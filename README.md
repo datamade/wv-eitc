@@ -4,8 +4,6 @@ http://investinwvfamilies.org
 
 ## Running locally
 
-## Running locally
-
 This website is built using Jekyll. You will need to [install it first](http://jekyllrb.com/docs/installation/).
 
 ```console
@@ -25,9 +23,13 @@ We used the following open source tools:
 * [jQuery Address](https://github.com/asual/jquery-address) - javascript library creating RESTful URLs
 * [GitHub pages](https://pages.github.com/) - free static website hosting
 
-# Data
+# Data sources
 
-Coming soon
+West Virginia Upper and Lower legislative districts come from the US Census: https://www.census.gov/geo/maps-data/data/cbf/cbf_sld.html
+
+EITC impact numbers collected and provided by the West Virginia Center on Budget & Policy.
+
+[See our README for more on working with this data](https://github.com/datamade/wv-eitc/tree/master/data)
 
 ## Team
 
@@ -49,3 +51,5 @@ Report it here: https://github.com/datamade/wv-eitc/issues
 ## Copyright
 
 Copyright (c) 2015 DataMade and Voices for West Virginia Center on Budget & Policy. Released under the [MIT License](https://github.com/datamade/wv-eitc/blob/master/LICENSE).
+
+This project is based on [EITC Works!](http://eitcworks.org/) by DataMade and Voices for Illinois Children. [See the code](https://github.com/datamade/eitc-map).
