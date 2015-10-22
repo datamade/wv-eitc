@@ -216,12 +216,12 @@ var map;
         district = parseInt(properties['DISTRICT_N']);
 
         if (view_mode == 'senate') {
-          doc_link = "#";
+          doc_link = "/docs/wv-eitc-senate." + district + ".pdf";
           name = properties['SENATOR'];
           mode_name = "Senate"
         }
         else {
-          doc_link = "#";
+          doc_link = "/docs/wv-eitc-house." + district + ".pdf";
           name = properties['HOUSEREP'];
         }
 
@@ -249,8 +249,8 @@ var map;
               <p><a target='_blank' href='" + doc_link + "'><img class='img-responsive img-thumbnail' src='images/eitc_factsheet.png' alt='EITC Factsheet' /><br /><i class='icon-download'></i> Download district profile</a></p>\
             </div>\
             <div class='col-lg-6 text-center'>\
-              <h3>Tell your lawmaker!</h3>\
-              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='http://salsa4.salsalabs.com/o/50920/p/dia/action3/common/public/?action_KEY=10927'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
+              <h3>Take action!</h3>\
+              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='#'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
             </div>\
             <div class='clearfix'></div>\
             </div>";
