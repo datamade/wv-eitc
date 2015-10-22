@@ -15,7 +15,7 @@ hr {
   font-size: .8em;
 }
 
-.navbar-brand { font-size: 30px;}
+.navbar-brand { font-size: 30px; height: 30px; padding-bottom: 5px; padding-top: 10px;}
 .navbar-header>.navbar-brand, .navbar-inverse .navbar-nav>li>a {color: #00529B;}
 
 #map { width: 100%; height: 670px;}
@@ -32,12 +32,6 @@ hr {
     -webkit-transition-property: none!important;
     -webkit-animation: none!important;
     animation: none!important;
-}
-
-@media (min-width:768px){
-  #search_address {
-      width: 450px;
-  }
 }
 
 #take-action {
