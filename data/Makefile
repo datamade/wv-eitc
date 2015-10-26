@@ -57,5 +57,5 @@ merged_eitc_%.geojson: merged_eitc_%.shp
 
 .PHONY : create_db
 create_db :
-	createdb wv_eitc
-	psql -d wv_eitc -c "CREATE EXTENSION postgis"
+	createdb -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT) wv_eitc
+	psql -d $(PG_DB) -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT) -c "CREATE EXTENSION postgis"
