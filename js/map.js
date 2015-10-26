@@ -114,7 +114,7 @@ var map;
 
       $('.view-mode').removeClass('btn-primary').addClass('btn-default');
       self.addClass('btn-primary');
-      
+
       if (mode == 'senate') {
         map.removeLayer(house_boundaries);
         senate_boundaries.addTo(map);
@@ -250,7 +250,7 @@ var map;
             </div>\
             <div class='col-lg-6 text-center'>\
               <h3>Take action!</h3>\
-              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='#'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
+              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='https://actionnetwork.org/letters/tell-the-west-virginia-joint-select-committee-on-tax-reform-to-support-a-state-earned-income-tax-credit-3?clear_id=true'><i class='icon-bullhorn'></i> Tell your lawmaker EITC Works!</a></p>\
             </div>\
             <div class='clearfix'></div>\
             </div>";
@@ -259,7 +259,7 @@ var map;
 
     function renderReps(properties, as_table){
       var repsTxt = ""
-      for (i = 1; i < 6; i++) { 
+      for (i = 1; i < 6; i++) {
         if (properties['REP_NAME_' + i] != undefined && properties['REP_NAME_' + i] != "") {
           var rowTxt = properties['REP_NAME_' + i] + " (" + properties['PARTY_' + i] + " - " + properties['COUNTY_' + i] + ")";
           if (as_table)
