@@ -8,7 +8,7 @@ SHELL := /bin/bash
 
 # Variables specific to this build
 PG_HOST=localhost
-PG_USER=derekeder
+PG_USER=postgres
 PG_DB=wv_eitc
 PG_PORT=5432
 

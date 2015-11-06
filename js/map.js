@@ -242,6 +242,10 @@ var map;
                       <td>Annual boost to local economy</td>\
                       <td>" + accounting.formatMoney(properties['ECONOMIC_I'], {precision: 0}) + "</td>\
                   </tr>\
+                  <tr>\
+                      <td>Number of children effected</td>\
+                      <td>" + addCommas(properties['CHILDREN_I']) + "</td>\
+                  </tr>\
               </tbody>\
             </table>\
             <div class='col-lg-6 text-center'>\
