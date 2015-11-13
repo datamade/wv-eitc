@@ -1,7 +1,7 @@
 "district_number","rep_name_1","party_1","county_1","rep_name_2","party_2","county_2","rep_name_3","party_3","county_3","rep_name_4","party_4","county_4","rep_name_5","party_5","county_5","household_benefit","economic_impact","children_in_eitc_households"
 1,"Pat McGeehan","R","Hancock","Mark Zatezalo","R","Hancock",,,,,,,,,,"2,829","$908,344","3,356"
 2,"Ryan Weld","R","Brooke",,,,,,,,,,,,,"1,256","$381,852","1,369"
-3,"Shawn Fluharty","D","Ohio","Erikka Storch","R",,,,,,,,,,,"2,818","$863,084","3,092"
+3,"Shawn Fluharty","D","Ohio","Erikka Storch","R","Ohio",,,,,,,,,,"2,818","$863,084","3,092"
 4,"Michael Ferro","D","Marshall","David Evans","R","Marshall",,,,,,,,,,"2,701","$869,913","3,144"
 5,"Dave Pethtel","D","Wetzel",,,,,,,,,,,,,"1,255","$416,261","1,387"
 6,"William Romine","R","Tyler",,,,,,,,,,,,,"1,130","$384,956","1,340"
