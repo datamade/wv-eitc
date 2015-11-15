@@ -243,7 +243,7 @@ var map;
                       <td>" + accounting.formatMoney(properties['ECONOMIC_I'], {precision: 0}) + "</td>\
                   </tr>\
                   <tr>\
-                      <td>Number of children effected</td>\
+                      <td>Number of children affected</td>\
                       <td>" + addCommas(properties['CHILDREN_I']) + "</td>\
                   </tr>\
               </tbody>\
