@@ -254,7 +254,7 @@ var map;
             </div>\
             <div class='col-lg-6 text-center'>\
               <h3>Take action!</h3>\
-              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='https://actionnetwork.org/letters/tell-the-west-virginia-joint-select-committee-on-tax-reform-to-support-a-state-earned-income-tax-credit-3?clear_id=true'><i class='icon-bullhorn'></i> Tell your lawmaker<span class='hidden-xs hidden-sm'> EITC Works</span>!</a></p>\
+              <p>Help us spread the word about doubling the West Virginia Earned Income Tax Credit.<br /><br /></p><p><a class='btn btn-primary' target='_blank' href='https://actionnetwork.org/letters/ask-the-wv-house-finance-committee-to-not-forget-hard-working-families'><i class='icon-bullhorn'></i> Tell your lawmaker<span class='hidden-xs hidden-sm'> EITC Works</span>!</a></p>\
             </div>\
             <div class='clearfix'></div>\
             </div>";
