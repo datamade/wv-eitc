@@ -35,7 +35,7 @@ senate_boundaries.shp : src/$(SENATE_SHAPE).zip
 		psql -d $(PG_DB) -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT)
 	touch $@
 
-eitc_%.table: eitc_%.csv
+eitc_%.table: eitc_%_formatted.csv
 	psql -d $(PG_DB) -U $(PG_USER) -h $(PG_HOST) -p $(PG_PORT) -c "DROP TABLE IF EXISTS info_by_$*"
 	csvsql $< \
 		--db "postgresql://$(PG_USER):@$(PG_HOST):$(PG_PORT)/$(PG_DB)" --table info_by_$* --insert
