@@ -4,8 +4,13 @@ var map;
     var lastClicked;
     var house_boundaries;
     var senate_boundaries;
-    var view_mode = 'house'
+    var view_mode = 'house';
     var marker;
+    var locationScope = "west virginia";
+
+    var geocoder = new google.maps.Geocoder();
+    var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
+
     map = L.map('map', {minZoom: 6})
         .fitBounds([[35.2905, -77.3108],[41.0710,-83.2434]]);
     var googleLayer = new L.Google('ROADMAP', {animate: false});
@@ -79,33 +84,59 @@ var map;
         }
     );
 
-    $('#search_address').geocomplete()
-      .bind('geocode:result', function(event, result){
-        if (typeof marker !== 'undefined'){
-            map.removeLayer(marker);
-        }
-        var lat = result.geometry.location.lat();
-        var lng = result.geometry.location.lng();
-        marker = L.marker([lat, lng]).addTo(map);
-        map.setView([lat, lng], 17);
-        var district;
-        if (view_mode == 'senate')
-          district = leafletPip.pointInLayer([lng, lat], senate_boundaries);
-        else
-          district = leafletPip.pointInLayer([lng, lat], house_boundaries);
+    function doSearch(){
+        var address = $('#search_address').val();
+        if (address !== "") {
+            if (address.toLowerCase().indexOf(locationScope) === -1) {
+                address = address + " " + locationScope;
+            }
+            geocoder.geocode({
+                'address': address
+            }, function (results, status) {
+                if (status === google.maps.GeocoderStatus.OK) {
+                  var geocoded_location = results[0].geometry.location;
 
-        $.address.parameter('address', encodeURI($('#search_address').val()));
-        district[0].fire('click');
-      });
+                  if (typeof marker !== 'undefined'){
+                      map.removeLayer(marker);
+                  }
+                  var lat = geocoded_location.lat();
+                  var lng = geocoded_location.lng();
+                  
+                  var district;
+                  if (view_mode == 'senate')
+                    district = leafletPip.pointInLayer([lng, lat], senate_boundaries);
+                  else
+                    district = leafletPip.pointInLayer([lng, lat], house_boundaries);
+
+                  
+
+                  if (district.length > 0) {
+                    marker = L.marker([lat, lng]).addTo(map);
+                    map.setView([lat, lng], 17);
+                    
+                    $.address.parameter('address', encodeURI($('#search_address').val()));
+
+                    district[0].fire('click');
+                  } else {
+
+                    alert("Please enter an address in the state of West Virginia.");
+                  }
+                }
+                else {
+                  alert("We could not find your address: " + status);
+                }
+            });
+        }
+      };
 
     $("#search").click(function(){
-      $('#search_address').trigger("geocode");
+      doSearch();
     });
 
     var address = convertToPlainString($.address.parameter('address'));
     if(address){
         $("#search_address").val(address);
-        $('#search_address').geocomplete('find', address)
+        doSearch();
     }
 
     $('.view-mode').click(function(){
@@ -124,7 +155,7 @@ var map;
         map.removeLayer(senate_boundaries);
       }
 
-      $('#search_address').trigger("geocode");
+      doSearch();
 
       $.address.parameter('view_mode', mode);
       view_mode = mode;
