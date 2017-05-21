@@ -250,7 +250,7 @@ var map;
             </table>\
             <div class='col-lg-6 text-center'>\
               <h3>District " + district + " profile</h3>\
-              <p><a target='_blank' href='" + doc_link + "'><img class='img-responsive img-thumbnail' src='images/eitc_factsheet.png' alt='EITC Factsheet' /><br /><i class='icon-download'></i> Download district profile</a></p>\
+              <p><a target='_blank' href='" + doc_link + "'><img class='img-responsive img-thumbnail' src='/images/eitc_factsheet.jpg' alt='EITC Factsheet' /><br /><i class='icon-download'></i> Download district profile</a></p>\
             </div>\
             <div class='col-lg-6 text-center'>\
               <h3>Take action!</h3>\
