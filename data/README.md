@@ -29,7 +29,7 @@ Edit the `config.mk` for your settings
 Configure make in `config.mk` with your DB settings, then:
 
 ```bash
-> make created_db
+> make create_db
 > make all
 > make cleanup_shapefiles
 ```
