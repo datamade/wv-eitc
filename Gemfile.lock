@@ -94,5 +94,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (= 1.5.1)
-  jekyll-redirect-from (= 0.3.1)
+  jekyll
+  jekyll-redirect-from
+
+BUNDLED WITH
+   2.0.1
