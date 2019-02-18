@@ -1,18 +1,18 @@
 district_number,rep_name_1,party_1,county_1,rep_name_2,party_2,county_2,household_benefit,economic_impact,children_in_eitc_households
-1,William Ihlenfeld,D,Ohio,Ryan Weld,R,Brooke,7739," $                               2,283,102 ",9519
-2,Michael Maroney,R,Marshall,Charles Clemons,R,Wetzle,8256," $                               2,560,408 ",10155
-3,Donna Boley,R,Pleasants,Michael Azinger,R,Wood,9520," $                               2,980,793 ",11710
-4,Mitch Carmichael,R,Jackson,Eric Tarr,R,Putnam,7699," $                               2,421,297 ",9470
-5,Robert Plymale,D,Wayne,Michael Woelfel,D,Cabell,9660," $                               2,907,727 ",11882
-6,Chandler Swope,R,Mercer,Mark Maynard,R,Wayne,9544," $                               3,390,476 ",11739
-7,Paul Hardesty,D,Logan,Ron Stollings,D,Boone,8573," $                               2,994,575 ",10545
-8,Richard Lindsay,D,Kanawha,Glenn Jeffries,D,Putnam,8847," $                               2,685,591 ",10882
-9,Sue Cline,D,Wyoming,Rollan Roberts,R, Raleigh,8362," $                               2,794,212 ",10285
-10,Kenny Mann,R,Monroe,Stephen Baldwin,D,Greenbrier,9260," $                               2,949,397 ",11390
-11,Gregory Boso,R,Nicholas,Bill Hamilton,R,Upshur,10149," $                               3,165,751 ",12483
-12,Douglas Facemire,D,Braxton,Michael Romano,D,Harrison,9522," $                               2,951,970 ",11712
-13,Roman Prezioso,D,Marion,Robert Beach,D,Monongalia,7143," $                               1,928,355 ",8786
-14,Randy Smith,R,Tucker,Dave Sypolt,R,Preston,9428," $                               2,896,221 ",11596
-15,Craig Blair,R,Berkeley,Charles Trump,R,Morgan,9424," $                               2,897,850 ",11592
-16,Patricia Rucker,R,Jefferson,John Unger,D,Berkeley,8581," $                               2,633,400 ",10555
-17,Corey Palumbo,D,Kanawha,Tom Takubo,R,Kanawha,8627," $                               2,681,408 ",10611
+1,William Ihlenfeld,D,Ohio,Ryan Weld,R,Brooke,"7,739","$2,283,102","9,519"
+2,Michael Maroney,R,Marshall,Charles Clemons,R,Wetzle,"8,256","$2,560,408","10,155"
+3,Donna Boley,R,Pleasants,Michael Azinger,R,Wood,"9,520","$2,980,793","11,710"
+4,Mitch Carmichael,R,Jackson,Eric Tarr,R,Putnam,"7,699","$2,421,297","9,470"
+5,Robert Plymale,D,Wayne,Michael Woelfel,D,Cabell,"9,660","$2,907,727","11,882"
+6,Chandler Swope,R,Mercer,Mark Maynard,R,Wayne,"9,544","$3,390,476","11,739"
+7,Paul Hardesty,D,Logan,Ron Stollings,D,Boone,"8,573","$2,994,575","10,545"
+8,Richard Lindsay,D,Kanawha,Glenn Jeffries,D,Putnam,"8,847","$2,685,591","10,882"
+9,Sue Cline,D,Wyoming,Rollan Roberts,R, Raleigh,"8,362","$2,794,212","10,285"
+10,Kenny Mann,R,Monroe,Stephen Baldwin,D,Greenbrier,"9,260","$2,949,397","11,390"
+11,Gregory Boso,R,Nicholas,Bill Hamilton,R,Upshur,"10,149","$3,165,751","12,483"
+12,Douglas Facemire,D,Braxton,Michael Romano,D,Harrison,"9,522","$2,951,970","11,712"
+13,Roman Prezioso,D,Marion,Robert Beach,D,Monongalia,"7,143","$1,928,355","8,786"
+14,Randy Smith,R,Tucker,Dave Sypolt,R,Preston,"9,428","$2,896,221","11,596"
+15,Craig Blair,R,Berkeley,Charles Trump,R,Morgan,"9,424","$2,897,850","11,592"
+16,Patricia Rucker,R,Jefferson,John Unger,D,Berkeley,"8,581","$2,633,400","10,555"
+17,Corey Palumbo,D,Kanawha,Tom Takubo,R,Kanawha,"8,627","$2,681,408","10,611"

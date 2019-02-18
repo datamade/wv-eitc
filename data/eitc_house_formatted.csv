@@ -1,68 +1,68 @@
 district_number,rep_name_1,party_1,county_1,rep_name_2,party_2,county_2,rep_name_3,party_3,county_3,rep_name_4,party_4,county_4,rep_name_5,party_5,county_5,household_benefit,economic_impact,children_in_eitc_households
-1,Pat McGeehan,R,Hancock,Randy Swartzmiller,D,Hancock,,,,,,,,,,2959,"$873,923 ",3640
-2,Phillip Diserio,D,Brooke,,,,,,,,,,,,,1335,"$382,034 ",1642
-3,Shawn Fluharty,D,Ohio,Erikka Storch,R,Ohio,,,,,,,,,,2910,"$859,527 ",3579
-4,Lisa Zukoff,D,Marshall,Joe Canestraro,D,Marshall,,,,,,,,,,2806,"$886,379 ",3451
-5,Dave Pethtel,D,Wetzel,,,,,,,,,,,,,1293,"$404,338 ",1590
-6,David Kelly,R,Tyler,,,,,,,,,,,,,1311,"$410,209 ",1613
-7,Jason Harshbarger,R,Ritchie,,,,,,,,,,,,,1251,"$384,813 ",1539
-8,Bill Anderson,R,Wood,,,,,,,,,,,,,1473,"$435,387 ",1812
-9,Ray Hollen,R,Wirt,,,,,,,,,,,,,1552,"$499,875 ",1909
-10,Vernon Criss,R,Wood,John Kelly,R,Wood,Tom Azinger,R,Wood,,,,,,,5475,"$1,723,643 ",6734
-11,Martin Atkinson,R,Roane,,,,,,,,,,,,,1557,"$504,617 ",1915
-12,Steve Westfall,R,Jackson,,,,,,,,,,,,,1468,"$461,079 ",1806
-13,Scott Cadle,R,Mason,Joshua Higginbotham,R,Putnam,,,,,,,,,,2948,"$907,758 ",3626
-14,Jim Butler,R,Mason,,,,,,,,,,,,,1460,"$478,207 ",1796
-15,Geoff Foster,R,Putnam,,,,,,,,,,,,,1093,"$332,383 ",1344
-16,Daniel Linville,R,Cabell,John Mandt,R,Cabell,Sean Hornbuckle,R,Cabell,,,,,,,4552,"$1,362,513 ",5599
-17,Chad Lovejoy,D,Cabell,Matthew Rohrbach,R,Cabell,,,,,,,,,,3120,"$941,467 ",3838
-18,Evan Worrell,R,Cabell,,,,,,,,,,,,,1324,"$398,432 ",1629
-19,Kenneth Hicks,D,Wayne,Robert Thompson,D,Wayne,,,,,,,,,,3207,"$1,123,710 ",3945
-20,Nathan Brown,D,Mingo,,,,,,,,,,,,,1496,"$525,011 ",1840
-21,Mark Dean,R,Mingo,,,,,,,,,,,,,1693,"$575,400 ",2082
-22,Joe Jeffries,R,Putnam,Zack Maynard,R,Lincoln,,,,,,,,,,2794,"$956,589 ",3437
-23,Rodney Miller,D,Boone,,,,,,,,,,,,,1274,"$461,622 ",1567
-24,Tim Tomblin,D,Logan,Ralph Rodighiero,D,Logan,,,,,,,,,,2984,"$1,025,704 ",3670
-25,Tony Paynter,R,Wyoming,,,,,,,,,,,,,1376,"$522,564 ",1692
-26,Ed Evans,D,McDowell,,,,,,,,,,,,,1510,"$580,210 ",1857
-27,Joe Ellington,R,Mercer,Eric Porterfield,R,Mercer,John Shott,R,Mercer,,,,,,,4746,"$1,620,311 ",5838
-28,Jeffrey Pack,R,Raleigh,Roy Cooper,R,Summers,,,,,,,,,,2772,"$881,491 ",3410
-29,Brandon Steele,R,Raleigh,,,,,,,,,,,,,1756,"$581,133 ",2160
-30,Mick Bates,D,Raleigh,,,,,,,,,,,,,1665,"$529,978 ",2048
-31,Chris Toney,R,Raleigh,,,,,,,,,,,,,1604,"$546,852 ",1973
-32,Kayla Kessinger,R,Fayette,Tom Fast,R,Fayette,Margaret Staggers,D,Fayette,,,,,,,5148,"$1,669,845 ",6332
-33,Roger Hanshaw,R,Clay,,,,,,,,,,,,,1547,"$519,782 ",1903
-34,Brent Boggs,D,Braxton,,,,,,,,,,,,,1561,"$489,368 ",1920
-35,Doug Skaff,D,Kanawha,Andrew Byrd,D,Kanawha,Moore Capito,R,Kanawha,Eric Nelson,R,Kanawha,,,,6012,"$1,837,381 ",7395
-36,Andrew Robinson,D,Kanawha,Amanda Estep-Burton,D,Kanawha,Larry Rowe,D,Kanawha,,,,,,,4685,"$1,473,846 ",5763
-37,Mike Pushkin,D,Kanawha,,,,,,,,,,,,,1599,"$463,395 ",1967
-38,Diana Graves,R,Kanawha,,,,,,,,,,,,,1394,"$420,365 ",1715
-39,Sharon Malcolm,R,Kanawha,,,,,,,,,,,,,1281,"$395,907 ",1576
-40,Dean Jeffries,R,Kanawha,,,,,,,,,,,,,1480,"$462,317 ",1820
-41,Jordan Hill,R,Nicholas,,,,,,,,,,,,,1547,"$483,636 ",1903
-42,Jeff Campbell,D,Greenbrier,Cindy Lavender-Bowe,D,Greenbrier,,,,,,,,,,3253,"$1,009,017 ",4001
-43,Cody Thompson,D,Randolph,William Hartman,D,Randolph,,,,,,,,,,3532,"$1,066,741 ",4344
-44,Caleb Hannah,R,Webster,,,,,,,,,,,,,1743,"$572,892 ",2144
-45,Carl Martin,R,Upshire,,,,,,,,,,,,,1646,"$522,668 ",2025
-46,Patrick Martin,R,Lewis,,,,,,,,,,,,,1660,"$490,650 ",2042
-47,Chris Phillips,R,Barbour,,,,,,,,,,,,,1647,"$505,311 ",2026
-48,Terry Waxman,R,Harrison,Timothy Miley,D,Harrison,Danny Hamrick,R,Harrison,Ben Queen,R,Harrison,,,,5740,"$1,748,375 ",7060
-49,Amy Summers,R,Tayler,,,,,,,,,,,,,1485,"$452,235 ",1827
-50,Linda Longstreth,D,Marion,Michael Angelucci,D,Marion,Mike Caputo,D,Harrison,,,,,,,4188,"$1,261,425 ",5151
-51,Evan Hanson,D,Monongalia,John Williams,D,Monongalia,Barbara Fleischauer,D,Monongalia,Danielle Walker,D,Monongalia,Rodney Pyles,D,Monongalia,5349,"$1,370,083 ",6579
-52,Terry Sypolt,R,Preston,,,,,,,,,,,,,1400,"$418,311 ",1722
-53,D Jennings,R,Preston,,,,,,,,,,,,,1543,"$450,232 ",1898
-54,John Holt,R,Grant,,,,,,,,,,,,,1712,"$534,742 ",2106
-55,Isaac Sponaugle,D,Pendleton,,,,,,,,,,,,,1954,"$640,803 ",2403
-56,Gary Howell,R,Mineral,,,,,,,,,,,,,1691,"$545,165 ",2080
-57,Ruth Rowan,R,Hampshire,,,,,,,,,,,,,1665,"$523,696 ",2048
-58,Daryl Cowles,R,Morgan,,,,,,,,,,,,,1535,"$465,623 ",1888
-59,Larry Kump,R,Berkeley,,,,,,,,,,,,,1463,"$430,895 ",1799
-60,S Wilson,R,Berkeley,,,,,,,,,,,,,1645,"$509,692 ",2023
-61,Jason Barrett,D,Berkeley,,,,,,,,,,,,,2059,"$640,226 ",2533
-62,Tom Bibby,R,Berkeley,,,,,,,,,,,,,1523,"$456,879 ",1873
-63,John Hardy,R,Berkeley,,,,,,,,,,,,,1798,"$560,198 ",2212
-64,Eric Householder,R,Berkeley,,,,,,,,,,,,,1643,"$524,860 ",2021
-65,Sammi Brown,D,Jefferson,,,,,,,,,,,,,1395,"$437,527 ",1716
-66,Paul Espinosa,R,Jefferson,,,,,,,,,,,,,1140,"$345,617 ",1402
-67,John Doyle,D,Jefferson,,,,,,,,,,,,,904,"$244,830 ",1112
+1,Pat McGeehan,R,Hancock,Randy Swartzmiller,D,Hancock,,,,,,,,,,"2,959","$873,923 ","3,640"
+2,Phillip Diserio,D,Brooke,,,,,,,,,,,,,"1,335","$382,034 ","1,642"
+3,Shawn Fluharty,D,Ohio,Erikka Storch,R,Ohio,,,,,,,,,,"2,910","$859,527 ","3,579"
+4,Lisa Zukoff,D,Marshall,Joe Canestraro,D,Marshall,,,,,,,,,,"2,806","$886,379 ","3,451"
+5,Dave Pethtel,D,Wetzel,,,,,,,,,,,,,"1,293","$404,338 ","1,590"
+6,David Kelly,R,Tyler,,,,,,,,,,,,,"1,311","$410,209 ","1,613"
+7,Jason Harshbarger,R,Ritchie,,,,,,,,,,,,,"1,251","$384,813 ","1,539"
+8,Bill Anderson,R,Wood,,,,,,,,,,,,,"1,473","$435,387 ","1,812"
+9,Ray Hollen,R,Wirt,,,,,,,,,,,,,"1,552","$499,875 ","1,909"
+10,Vernon Criss,R,Wood,John Kelly,R,Wood,Tom Azinger,R,Wood,,,,,,,"5,475","$1,723,643 ","6,734"
+11,Martin Atkinson,R,Roane,,,,,,,,,,,,,"1,557","$504,617 ","1,915"
+12,Steve Westfall,R,Jackson,,,,,,,,,,,,,"1,468","$461,079 ","1,806"
+13,Scott Cadle,R,Mason,Joshua Higginbotham,R,Putnam,,,,,,,,,,"2,948","$907,758 ","3,626"
+14,Jim Butler,R,Mason,,,,,,,,,,,,,"1,460","$478,207 ","1,796"
+15,Geoff Foster,R,Putnam,,,,,,,,,,,,,"1,093","$332,383 ","1,344"
+16,Daniel Linville,R,Cabell,John Mandt,R,Cabell,Sean Hornbuckle,R,Cabell,,,,,,,"4,552","$1,362,513 ","5,599"
+17,Chad Lovejoy,D,Cabell,Matthew Rohrbach,R,Cabell,,,,,,,,,,"3,120","$941,467 ","3,838"
+18,Evan Worrell,R,Cabell,,,,,,,,,,,,,"1,324","$398,432 ","1,629"
+19,Kenneth Hicks,D,Wayne,Robert Thompson,D,Wayne,,,,,,,,,,"3,207","$1,123,710 ","3,945"
+20,Nathan Brown,D,Mingo,,,,,,,,,,,,,"1,496","$525,011 ","1,840"
+21,Mark Dean,R,Mingo,,,,,,,,,,,,,"1,693","$575,400 ","2,082"
+22,Joe Jeffries,R,Putnam,Zack Maynard,R,Lincoln,,,,,,,,,,"2,794","$956,589 ","3,437"
+23,Rodney Miller,D,Boone,,,,,,,,,,,,,"1,274","$461,622 ","1,567"
+24,Tim Tomblin,D,Logan,Ralph Rodighiero,D,Logan,,,,,,,,,,"2,984","$1,025,704 ","3,670"
+25,Tony Paynter,R,Wyoming,,,,,,,,,,,,,"1,376","$522,564 ","1,692"
+26,Ed Evans,D,McDowell,,,,,,,,,,,,,"1,510","$580,210 ","1,857"
+27,Joe Ellington,R,Mercer,Eric Porterfield,R,Mercer,John Shott,R,Mercer,,,,,,,"4,746","$1,620,311 ","5,838"
+28,Jeffrey Pack,R,Raleigh,Roy Cooper,R,Summers,,,,,,,,,,"2,772","$881,491 ","3,410"
+29,Brandon Steele,R,Raleigh,,,,,,,,,,,,,"1,756","$581,133 ","2,160"
+30,Mick Bates,D,Raleigh,,,,,,,,,,,,,"1,665","$529,978 ","2,048"
+31,Chris Toney,R,Raleigh,,,,,,,,,,,,,"1,604","$546,852 ","1,973"
+32,Kayla Kessinger,R,Fayette,Tom Fast,R,Fayette,Margaret Staggers,D,Fayette,,,,,,,"5,148","$1,669,845 ","6,332"
+33,Roger Hanshaw,R,Clay,,,,,,,,,,,,,"1,547","$519,782 ","1,903"
+34,Brent Boggs,D,Braxton,,,,,,,,,,,,,"1,561","$489,368 ","1,920"
+35,Doug Skaff,D,Kanawha,Andrew Byrd,D,Kanawha,Moore Capito,R,Kanawha,Eric Nelson,R,Kanawha,,,,"6,012","$1,837,381 ","7,395"
+36,Andrew Robinson,D,Kanawha,Amanda Estep-Burton,D,Kanawha,Larry Rowe,D,Kanawha,,,,,,,"4,685","$1,473,846 ","5,763"
+37,Mike Pushkin,D,Kanawha,,,,,,,,,,,,,"1,599","$463,395 ","1,967"
+38,Diana Graves,R,Kanawha,,,,,,,,,,,,,"1,394","$420,365 ","1,715"
+39,Sharon Malcolm,R,Kanawha,,,,,,,,,,,,,"1,281","$395,907 ","1,576"
+40,Dean Jeffries,R,Kanawha,,,,,,,,,,,,,"1,480","$462,317 ","1,820"
+41,Jordan Hill,R,Nicholas,,,,,,,,,,,,,"1,547","$483,636 ","1,903"
+42,Jeff Campbell,D,Greenbrier,Cindy Lavender-Bowe,D,Greenbrier,,,,,,,,,,"3,253","$1,009,017 ","4,001"
+43,Cody Thompson,D,Randolph,William Hartman,D,Randolph,,,,,,,,,,"3,532","$1,066,741 ","4,344"
+44,Caleb Hannah,R,Webster,,,,,,,,,,,,,"1,743","$572,892 ","2,144"
+45,Carl Martin,R,Upshire,,,,,,,,,,,,,"1,646","$522,668 ","2,025"
+46,Patrick Martin,R,Lewis,,,,,,,,,,,,,"1,660","$490,650 ","2,042"
+47,Chris Phillips,R,Barbour,,,,,,,,,,,,,"1,647","$505,311 ","2,026"
+48,Terry Waxman,R,Harrison,Timothy Miley,D,Harrison,Danny Hamrick,R,Harrison,Ben Queen,R,Harrison,,,,"5,740","$1,748,375 ","7,060"
+49,Amy Summers,R,Tayler,,,,,,,,,,,,,"1,485","$452,235 ","1,827"
+50,Linda Longstreth,D,Marion,Michael Angelucci,D,Marion,Mike Caputo,D,Harrison,,,,,,,"4,188","$1,261,425 ","5,151"
+51,Evan Hanson,D,Monongalia,John Williams,D,Monongalia,Barbara Fleischauer,D,Monongalia,Danielle Walker,D,Monongalia,Rodney Pyles,D,Monongalia,"5,349","$1,370,083 ","6,579"
+52,Terry Sypolt,R,Preston,,,,,,,,,,,,,"1,400","$418,311 ","1,722"
+53,D Jennings,R,Preston,,,,,,,,,,,,,"1,543","$450,232 ","1,898"
+54,John Holt,R,Grant,,,,,,,,,,,,,"1,712","$534,742 ","2,106"
+55,Isaac Sponaugle,D,Pendleton,,,,,,,,,,,,,"1,954","$640,803 ","2,403"
+56,Gary Howell,R,Mineral,,,,,,,,,,,,,"1,691","$545,165 ","2,080"
+57,Ruth Rowan,R,Hampshire,,,,,,,,,,,,,"1,665","$523,696 ","2,048"
+58,Daryl Cowles,R,Morgan,,,,,,,,,,,,,"1,535","$465,623 ","1,888"
+59,Larry Kump,R,Berkeley,,,,,,,,,,,,,"1,463","$430,895 ","1,799"
+60,S Wilson,R,Berkeley,,,,,,,,,,,,,"1,645","$509,692 ","2,023"
+61,Jason Barrett,D,Berkeley,,,,,,,,,,,,,"2,059","$640,226 ","2,533"
+62,Tom Bibby,R,Berkeley,,,,,,,,,,,,,"1,523","$456,879 ","1,873"
+63,John Hardy,R,Berkeley,,,,,,,,,,,,,"1,798","$560,198 ","2,212"
+64,Eric Householder,R,Berkeley,,,,,,,,,,,,,"1,643","$524,860 ","2,021"
+65,Sammi Brown,D,Jefferson,,,,,,,,,,,,,"1,395","$437,527 ","1,716"
+66,Paul Espinosa,R,Jefferson,,,,,,,,,,,,,"1,140","$345,617 ","1,402"
+67,John Doyle,D,Jefferson,,,,,,,,,,,,,"904","$244,830 ","1,112"
