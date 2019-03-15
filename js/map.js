@@ -247,12 +247,12 @@ var map;
         district = parseInt(properties['DISTRICT_N']);
 
         if (view_mode == 'senate') {
-          doc_link = "/docs/wv-eitc-senate." + district + ".pdf";
+          doc_link = "/docs/wv-eitc-senate-page" + district + ".pdf";
           name = properties['SENATOR'];
           mode_name = "Senate"
         }
         else {
-          doc_link = "/docs/wv-eitc-house." + district + ".pdf";
+          doc_link = "/docs/wv-eitc-house-page" + district + ".pdf";
           name = properties['HOUSEREP'];
         }
 
