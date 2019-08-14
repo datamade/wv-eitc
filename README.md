@@ -2,6 +2,9 @@
 
 http://investinwvfamilies.org
 
+Working branch: https://github.com/datamade/wv-eitc
+Live branch: https://github.com/WVCBP/wv-eitc
+
 ## Running locally
 
 This website is built using Jekyll. You will need to [install it first](http://jekyllrb.com/docs/installation/).
